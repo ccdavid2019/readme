@@ -1,0 +1,81 @@
+==================================================================================
+使用管理员运行：anaconda prompt
+conda update anaconda-navigator
+anaconda-navigator --reset
+conda update anaconda-client
+conda update -f anaconda-client
+
+//
+conda create -n tensorflow22 python=3.5
+注：C:\Program Files\Anaconda3\envs\tensorflow2\python35.dll
+//anaconda下安装
+activate tensorflow22
+spyder
+yaml pyyaml
+cv2  opencv
+PIL  pillow
+tqdm
+easydict   pip install easydict
+
+python setup.py build_ext --inplace
+
+python setup.py build_ext install
+
+===================================================================================================
+anaconda prompt
+activate tensorflow22
+tensorboard --logdir=F:/algorithms/data/graph_gen/mitosis
+tensorboard --logdir=F:/algorithms/data/graph_gen/linknet
+tensorboard --logdir=F:/algorithms/data/graph_gen/xception
+tensorboard --logdir=F:/algorithms/data/graph_gen/ki67
+tensorboard --logdir=F:/algorithms/data/graph_gen/inception
+tensorboard --logdir=F:/algorithms/data/graph_gen/light_head_rcnn
+
+localhost:6006
+tensorboard --logdir=F:/algorithms_20190125/gen_graph/ki67
+tensorboard --logdir=F:/algorithms_20190125/gen_graph/polyp
+tensorboard --logdir=F:/algorithms_20190125/gen_graph/polyp/msrate_model
+
+
+ssh root@9.73.173.194
+Tfs@STO016
+
+cd /dockerdata/data/
+
+拷贝到本地
+sz
+
+rz -bye
+
+python3 inference.py
+
+zip命令
+压缩：
+zip -r block_stack_0_block_0_Relu_1_0.zip block_stack_0_block_0_Relu_1_0
+
+zip -r parameter.zip parameter
+
+解压：
+unzip tensorflow.zip
+
+tar xvf data.tar
+
+scp tf-inference.zip  root@9.73.173.194:/data/
+文件夹
+scp -r tf-inference  root@9.73.173.194:/data/
+
+内网
+/usr/local/python3/bin/pip3.5 install  opencv-python --trusted-host mirror-sng.oa.com -i http://mirror-sng.oa.com/pypi/web/simple/
+/usr/local/python3/bin/pip3.5 install  Pillow --trusted-host mirror-sng.oa.com -i http://mirror-sng.oa.com/pypi/web/simple/
+/usr/local/python3/bin/pip3.5 install  jupyter --trusted-host mirror-sng.oa.com -i http://mirror-sng.oa.com/pypi/web/simple/
+/usr/local/python3/bin/pip3.5 install  tqdm --trusted-host mirror-sng.oa.com -i http://mirror-sng.oa.com/pypi/web/simple/
+/usr/local/python3/bin/pip3.5 install  easydict --trusted-host mirror-sng.oa.com -i http://mirror-sng.oa.com/pypi/web/simple/
+
+/usr/local/python3/bin/pip3.5 install tensorflow_gpu-1.10.1-cp35-cp35m-linux_x86_64.whl   --trusted-host mirror-sng.oa.com -i http://mirror-sng.oa.com/pypi/web/simple/
+/usr/local/python3/bin/pip3.5 install scikit-image   --trusted-host mirror-sng.oa.com -i http://mirror-sng.oa.com/pypi/web/simple/
+/usr/local/python3/bin/pip3.5 install pyarrow   --trusted-host mirror-sng.oa.com -i http://mirror-sng.oa.com/pypi/web/simple/
+/usr/local/python3/bin/pip3.5 install ruamel_yaml   --trusted-host mirror-sng.oa.com -i http://mirror-sng.oa.com/pypi/web/simple/
+/usr/local/python3/bin/pip3.5 install SimpleITK   --trusted-host mirror-sng.oa.com -i http://mirror-sng.oa.com/pypi/web/simple/
+
+set http_proxy=http://dev-proxy.oa.com:8080
+set https_proxy=http://dev-proxy.oa.com:8080
